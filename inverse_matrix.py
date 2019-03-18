@@ -9,7 +9,7 @@ hc_array = np.array(hc)
 
 print('计算ing')
 K = np.matmul(hc_array.transpose(),K_left_array)
-K = np.matmul(K, hc)
+K = np.matmul(K, hc_array)
 '''
 从矩阵取部分行、列
 先取行，后从行里取列
